@@ -15,3 +15,9 @@ repos:
         files: \.cs$
         pass_filenames: false
         always_run: true
+      - id: roslyn-analyzers
+        name: Roslyn Analyzer Build Check
+        entry: dotnet build --no-restore --warnaserror
+        language: system
+        pass_filenames: false
+        always_run: true
